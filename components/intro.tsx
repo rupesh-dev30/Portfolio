@@ -66,7 +66,7 @@ export default function Intro() {
         <span className="font-medium">Hello, My name is </span>
         <span className="font-extrabold italic">Rupesh Kumar. </span>
         <br />
-        <span className="font-medium">I'm adept at </span>
+        <span className="font-medium">I&apos;m adept at </span>
         <span className="font-extrabold italic">
           creating visually stunning webpages{" "}
         </span>
