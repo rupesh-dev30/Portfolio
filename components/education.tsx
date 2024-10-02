@@ -3,14 +3,12 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import "react-vertical-timeline-component/style.min.css";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import { useSectionInView } from "@/lib/hooks";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import { useTheme } from "@/context/theme-context";
 import { education } from "@/lib/data";
 import { IoIosSchool } from "react-icons/io";
+
 
 export default function Education() {
   const { ref } = useSectionInView("Education");
@@ -19,7 +17,7 @@ export default function Education() {
   return (
     <section id="education" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 w-[50vw] m-auto">
       <SectionHeading>Education</SectionHeading>
-      <VerticalTimeline
+      <VerticalTimeline animate={false}
         lineColor={theme === "light" ? "#d1d5db" : "rgba(255, 255, 255, 0.2)"}
       >
         {education.map((item, index) => (
