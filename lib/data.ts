@@ -37,7 +37,7 @@ export const education = [
     location: "Chandigarh, India",
     description:
       "Pursuing Bachelor of Technology in Computer Science & Engineering (Core)",
-    remarks: "Current CGPA: 8.1.",
+    remarks: "Current CGPA: 8.2",
     icon: React.createElement(LuGraduationCap),
     date: "2022 - Present*",
   },
