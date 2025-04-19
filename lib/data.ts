@@ -34,7 +34,7 @@ export const links = [
 export const education = [
   {
     title: "Chandigarh Engineering College - CGC Landran",
-    location: "Chandigarh, India",
+    location: "SAS Nagar Mohali, Punjab, India",
     description:
       "Pursuing Bachelor of Technology in Computer Science & Engineering (Core)",
     remarks: "Current CGPA: 8.2",
@@ -43,7 +43,7 @@ export const education = [
   },
   {
     title: "Kendriya Vidyalaya, Bokaro Thermal",
-    location: "Bokaro, India",
+    location: "Bokaro Thermal, Jharkhand, India",
     description: "Completed Intermediate in Computer Science (Non Medical)",
     remarks: "Percentage: 87%",
     icon: React.createElement(LuGraduationCap),
@@ -51,7 +51,7 @@ export const education = [
   },
   {
     title: "Kendriya Vidyalaya, Bokaro Thermal",
-    location: "Bokaro, India",
+    location: "Bokaro Thermal, Jharkhand, India",
     description: "Completed Matriculation",
     remarks: "Percentage: 85%",
     icon: React.createElement(LuGraduationCap),
@@ -73,7 +73,7 @@ export const projectsData = [
       "Clerk",
     ],
     imageUrl: DevForum,
-    projectLink: "https://dev-forum-rupesh-dev30s-projects.vercel.app/",
+    projectLink: "https://devforum-eight.vercel.app/",
     githubLink: "https://github.com/rupesh-dev30/DevForum"
   },
   {
@@ -110,6 +110,7 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "React Native",
   "Next.js",
   "Node.js",
   "Git",
