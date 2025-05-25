@@ -35,7 +35,7 @@ Deployed at: **[https://rupesh-lemon.vercel.app/](https://rupesh-lemon.vercel.ap
 I’m a **Software Engineer** passionate about building robust and user-centric web and mobile applications. With hands-on experience in full-stack development, real-time features, and optimized performance, I enjoy crafting elegant solutions to complex problems.
 
 - Built full-stack projects with **secure authentication**, **live data sync**, and **responsive design**
-- Solved **1,000+ DSA problems** on **LeetCode** and **GFG**
+- Solved **1,200+ DSA problems** on **LeetCode** and **GFG**
 - Strong understanding of **data structures**, **algorithms**, and **system design**
 - Emphasis on **clean code**, **performance**, and **collaboration**
 
@@ -112,6 +112,3 @@ If you'd like to collaborate or just say hi, feel free to reach out!
 📧 **cgcrupesh@gmail.com**  
 
 ---
-
-> Built with ❤️ by **Rupesh Kumar**  
-> © 2025 Rupesh. All rights reserved.
