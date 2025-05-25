@@ -1,8 +1,10 @@
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import DevForum from "@/public/devForum.png";
-import ViNEXT from "@/public/vinext.png";
 import twitter from "@/public/twitter.png";
+import hinglish from "@/public/hinglish.png";
+import store from "@/public/store.png";
+import mess from "@/public/mess.png";
 
 export const links = [
   {
@@ -61,6 +63,20 @@ export const education = [
 
 export const projectsData = [
   {
+    title: "Hinglish Programming Language",
+    description:
+      "Hinglish Programming Language ek mazedaar interpreted language hai jismein aap Hinglish syntax se code likh sakte ho – jaise 'print karo.",
+    tags: [
+      "React.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "ShadCN",
+    ],
+    imageUrl: hinglish,
+    projectLink: "https://hinglish-language.vercel.app/",
+    githubLink: "https://github.com/rupesh-dev30/Hinglish-Language"
+  },
+  {
     title: "DevForum",
     description:
       "DevForum allows developers to ask questions, provide answers, and engage in discussions within a community-driven platform.",
@@ -77,13 +93,28 @@ export const projectsData = [
     githubLink: "https://github.com/rupesh-dev30/DevForum"
   },
   {
-    title: "ViNEXT",
+    title: "Mess Management App",
     description:
-      "Video conferencing web application with a focus on high-quality video streaming and low-latency communication.",
-    tags: ["Next.js", "ShadCN", "Clerk", "Stream", "TypeScript", "TailwindCSS"],
-    imageUrl: ViNEXT,
-    projectLink: "https://vinext-five.vercel.app/",
-    githubLink: "https://github.com/rupesh-dev30/VINEXT"
+      "Mess Management app simplifies menu and order with an admin panel for staff and a user panel for customers to place orders.",
+    tags: [
+      "React Native",
+      "Expo",
+      "Supabase",
+      "Supabase auth",
+    ],
+    imageUrl: mess,
+    projectLink: "https://github.com/rupesh-dev30/Mess-Management",
+    githubLink: "https://github.com/rupesh-dev30/Mess-Management"
+  },
+
+  {
+    title: "Store Karle",
+    description:
+      "Store-Karle is like a google drive, here you can store anything on cloud upto 2GB",
+    tags: ["Next.js", "ShadCN", "Appwrite","TypeScript", "TailwindCSS"],
+    imageUrl: store,
+    projectLink: "https://store-management-six.vercel.app/",
+    githubLink: "https://github.com/rupesh-dev30/Store-Karle"
   },
   {
     title: "Full Stack Twitter Clone",
