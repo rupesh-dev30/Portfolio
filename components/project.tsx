@@ -76,7 +76,7 @@ export default function Project({
             href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 text-white hover:underline text-sm font-medium"
+            className="mt-4 text-black hover:underline text-sm font-medium dark:text-white"
           >
             View Project ↗
           </Link>
