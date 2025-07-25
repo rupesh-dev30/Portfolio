@@ -4,11 +4,15 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";  // Import useTheme hook
+import { useTheme } from "@/context/theme-context";
 
 export default function About() {
   const { ref } = useSectionInView("About");
-  const { theme } = useTheme();  // Get the current theme
+  const { theme } = useTheme();
+
+  const isLight = theme === "light";
+  const textColor = isLight ? "text-black" : "text-[#ffffffab]";
+  const strongText = isLight ? "text-black" : "text-white";
 
   return (
     <motion.section
@@ -19,105 +23,59 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p
-        className={`mb-3 font-normal text-[18px] ${
-          theme === "light" ? "text-black" : "text-[#ffffffab]"  // Conditionally apply text color
-        }`}
-      >
-        As a{" "}
-        <span
-          className={`font-extrabold italic text-[20px] ${
-            theme === "light" ? "text-black" : "text-white"  // Conditionally apply text color
-          }`}
-        >
-          BTech
+      <SectionHeading>About Me</SectionHeading>
+
+      {/* First paragraph with core skills and aspirations */}
+      <p className={`mb-3 font-normal text-[18px] ${textColor}`}>
+        I&apos;m an aspiring{" "}
+        <span className={`font-extrabold italic text-[20px] ${strongText}`}>
+          Software Engineer
         </span>{" "}
-        student with a deep passion for{" "}
-        <span
-          className={`font-extrabold italic text-[20px] ${
-            theme === "light" ? "text-black" : "text-white"
-          }`}
-        >
-          full-stack web development
+        with a strong passion for{" "}
+        <span className={`font-extrabold italic text-[20px] ${strongText}`}>
+          full-stack web and mobile development
         </span>
-        , I am dedicated to mastering{" "}
-        <span
-          className={`font-extrabold italic text-[20px] ${
-            theme === "light" ? "text-black" : "text-white"
-          }`}
-        >
-          data structures & algorithms
-        </span>
-        , and various programming languages, including{" "}
-        <span
-          className={`font-extrabold italic text-[20px] ${
-            theme === "light" ? "text-black" : "text-white"
-          }`}
-        >
-          C, C++, Javascript, Java, and Python
-        </span>
-        . I love the challenge of applying theoretical knowledge to{" "}
-        <span
-          className={`font-extrabold italic text-[20px] ${
-            theme === "light" ? "text-black" : "text-white"
-          }`}
-        >
-          real-world projects
-        </span>
-        , and{" "}
-        <span
-          className={`font-extrabold italic text-[20px] ${
-            theme === "light" ? "text-black" : "text-white"
-          }`}
-        >
-          problem-solving
+        . I specialize in building{" "}
+        <span className={`font-extrabold italic text-[20px] ${strongText}`}>
+          scalable applications
         </span>{" "}
-        is the aspect of development I enjoy the most. My core focus lies in
-        building{" "}
-        <span
-          className={`font-extrabold italic text-[20px] ${
-            theme === "light" ? "text-black" : "text-white"
-          }`}
-        >
-          efficient
-        </span>{" "}
-        and scalable systems, and I am always eager to learn new technologies.
-        Currently, I&apos;m advancing my skills in web development with tools
-        like{" "}
-        <span
-          className={`font-extrabold italic text-[20px] ${
-            theme === "light" ? "text-black" : "text-white"
-          }`}
-        >
-          React, Next.js, Node.js
+        using modern frameworks like{" "}
+        <span className={`font-extrabold italic text-[20px] ${strongText}`}>
+          React, Next.js, React Native, Node.js and Nest.js
         </span>
-        , and more. I am seeking opportunities to grow as a{" "}
-        <span className="font-medium">software developer</span> and contribute
-        to innovative projects.
+        . My skills include creating responsive UIs, developing robust APIs, and
+        implementing secure authentication systems.
       </p>
 
-      <p className={`text-[18px] mt-6 ${theme === "light" ? "text-black" : "text-[#ffffffab]"}`}>
-        <span className="font-normal">When I&apos;m not coding</span>, I love playing
-        <span
-          className={`font-extrabold italic text-[20px] ${
-            theme === "light" ? "text-black" : "text-white"
-          }`}
-        >
-          {" "}
-          video games , watching movies, and exploring new technology{" "}
+      {/* Second paragraph with certifications and problem-solving focus */}
+      <p className={`mt-6 text-[18px] ${textColor}`}>
+        I am an{" "}
+        <span className={`font-extrabold italic text-[20px] ${strongText}`}>
+          AWS Academy-certified
+        </span>{" "}
+        professional with a solid understanding of{" "}
+        <span className={`font-extrabold italic text-[20px] ${strongText}`}>
+          cloud computing, databases, and secure application development
         </span>
-        <span className="font-medium"></span>. I&apos;m always curious about the
-        latest advancements in tech and enjoy staying up-to-date with emerging
-        trends. These activities help me unwind while also fueling my passion
-        for{" "}
-        <span
-          className={`font-extrabold italic text-[20px] ${
-            theme === "light" ? "text-black" : "text-white"
-          }`}
-        >
-          continuous learning.
+        . I&apos;m currently seeking a role where I can apply my skills in{" "}
+        <span className={`font-extrabold italic text-[20px] ${strongText}`}>
+          problem-solving
+        </span>{" "}
+        and contribute to building impactful, innovative products.
+      </p>
+
+      {/* Third paragraph with hobbies and continuous learning */}
+      <p className={`mt-6 text-[18px] ${textColor}`}>
+        When I&apos;m not coding, I enjoy playing{" "}
+        <span className={`font-extrabold italic text-[20px] ${strongText}`}>
+          video games
         </span>
+        , watching{" "}
+        <span className={`font-extrabold italic text-[20px] ${strongText}`}>
+          movies
+        </span>
+        , and exploring the latest tech trends to stay current with the
+        ever-evolving world of technology.
       </p>
     </motion.section>
   );

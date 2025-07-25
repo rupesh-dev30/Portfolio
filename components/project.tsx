@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number] & { index: number };
 
 export default function Project({
   title,
@@ -14,62 +14,74 @@ export default function Project({
   tags,
   imageUrl,
   projectLink,
+  index,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+
+  const isEven = index % 2 !== 0;
 
   return (
     <motion.div
       ref={ref}
-      style={{
-        scale: scaleProgess,
-        opacity: opacityProgess,
-      }}
-      className="group mb-3 sm:mb-8 last:mb-0 cursor-pointer"
+      style={{ scale: scaleProgress, opacity: opacityProgress }}
+      className="group mb-12 cursor-pointer max-w-3xl"
     >
-      <Link href={projectLink} target="_blank">
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {description}
-          </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
+      <section
+        className={`bg-gray-100 dark:bg-white/10 dark:hover:bg-white/20 transition border border-black/5 rounded-lg overflow-hidden flex flex-col sm:flex-row ${
+          isEven ? "sm:flex-row-reverse" : ""
+        } hover:bg-gray-200 w-full`}
+      >
+        {/* Image */}
+        <div className="sm:w-1/2 relative min-h-[200px]">
+          <Link href={projectLink} target="_blank">
+            <Image
+              src={imageUrl}
+              alt="Project preview"
+              fill
+              className={`object-cover transition-transform duration-300 group-hover:scale-[1.03] group-hover:rotate-1 ${
+                isEven
+                  ? "rounded-l-lg sm:rounded-r-none"
+                  : "rounded-r-lg sm:rounded-l-none"
+              }`}
+            />
+          </Link>
+        </div>
+
+        {/* Text Content */}
+        <div className="flex-1 p-6 sm:p-10 flex flex-col justify-between">
+          <div>
+            <h3 className="text-2xl font-semibold dark:text-white">{title}</h3>
+            <p className="mt-3 text-gray-700 dark:text-white/70">
+              {description}
+            </p>
+          </div>
+          <ul className="flex flex-wrap mt-6 gap-2">
+            {tags.map((tag, i) => (
               <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
+                key={i}
+                className="bg-black/70 dark:text-white/70 text-white px-3 py-1 text-xs uppercase tracking-wider rounded-full"
               >
                 {tag}
               </li>
             ))}
           </ul>
+          <Link
+            href={projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 text-white hover:underline text-sm font-medium"
+          >
+            View Project ↗
+          </Link>
         </div>
-
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-
-        group-even:right-[initial] group-even:-left-40"
-        />
       </section>
-      </Link>
     </motion.div>
   );
 }
