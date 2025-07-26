@@ -73,26 +73,26 @@ export const projectsData = [
     projectLink: "https://gta-vi-landing-page-zeta.vercel.app/",
     githubLink: "https://github.com/rupesh-dev30/GTA-VI-Landing-Page",
   },
-  {
-    title: "Food Delivery App",
-    description:
-      "A full-stack mobile food delivery app built with React Native, TypeScript, and Tailwind CSS (via NativeWind). Features Google Authentication, dynamic search, cart functionality, smooth navigation, and a modern responsive UI. Powered by Appwrite for backend, database, auth, and file storage. Follows scalable architecture with excellent developer experience.",
-    tags: [
-      "React Native",
-      "Expo",
-      "Appwrite",
-      "NativeWind",
-      "Tailwind CSS",
-      "TypeScript",
-      "Zustand",
-      "Sentry",
-    ],
-    imageUrl: foodDeliveryImage, // replace with the actual image import
-    projectLink:
-      "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
-    githubLink:
-      "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
-  },
+  // {
+  //   title: "Food Delivery App",
+  //   description:
+  //     "A full-stack mobile food delivery app built with React Native, TypeScript, and Tailwind CSS (via NativeWind). Features Google Authentication, dynamic search, cart functionality, smooth navigation, and a modern responsive UI. Powered by Appwrite for backend, database, auth, and file storage. Follows scalable architecture with excellent developer experience.",
+  //   tags: [
+  //     "React Native",
+  //     "Expo",
+  //     "Appwrite",
+  //     "NativeWind",
+  //     "Tailwind CSS",
+  //     "TypeScript",
+  //     "Zustand",
+  //     "Sentry",
+  //   ],
+  //   imageUrl: foodDeliveryImage, // replace with the actual image import
+  //   projectLink:
+  //     "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
+  //   githubLink:
+  //     "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
+  // },
   {
     title: "Hinglish Programming Language",
     description:
