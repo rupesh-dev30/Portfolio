@@ -6,7 +6,7 @@ import hinglish from "@/public/hinglish.png";
 import store from "@/public/store.png";
 import mess from "@/public/mess.png";
 import gta from "@/public/gta.png";
-import foodDeliveryImage from "@/public/foodDeliveryImage.png";
+// import foodDeliveryImage from "@/public/foodDeliveryImage.png";
 
 export const links = [
   {
