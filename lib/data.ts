@@ -6,7 +6,8 @@ import hinglish from "@/public/hinglish.png";
 import store from "@/public/store.png";
 import mess from "@/public/mess.png";
 import gta from "@/public/gta.png";
-import foodDeliveryImage from "@/public/foodDeliveryImage.png";
+import awwwards from "@/public/awwwards.png"
+// import foodDeliveryImage from "@/public/foodDeliveryImage.png";
 
 export const links = [
   {
@@ -65,6 +66,21 @@ export const education = [
 
 export const projectsData = [
   {
+    title: "Awwwards Site of the Day Website",
+    description:
+      "This project helps you build a visually stunning, award-worthy site using GSAP, React, and Tailwind CSS. Learn parallax effects, clip-path magic, scroll triggers, and responsive animation techniques inspired by real Awwwards sites.",
+    tags: [
+      "React 19",
+      "GSAP",
+      "Tailwind CSS v4",
+      "ScrollTrigger",
+      "ScrollSmoother",
+    ],
+    imageUrl: awwwards, // Replace this with your actual image import/URL
+    projectLink: "https://spylt-milk-lac.vercel.app/",
+    githubLink: "https://github.com/FullStackEmpire/gsap-awwwards-website",
+  },
+  {
     title: "GTA VI GSAP Website Clone",
     description:
       "Recreate the viral GTA VI website using React, Tailwind CSS, and GSAP. Includes scroll-driven video sync, parallax effects, pinned sections, image masking, and cinematic SplitText animations. A responsive, motion-rich experience powered by Vite and GSAP’s ScrollTrigger.",
@@ -73,26 +89,27 @@ export const projectsData = [
     projectLink: "https://gta-vi-landing-page-zeta.vercel.app/",
     githubLink: "https://github.com/rupesh-dev30/GTA-VI-Landing-Page",
   },
-  {
-    title: "Food Delivery App",
-    description:
-      "A full-stack mobile food delivery app built with React Native, TypeScript, and Tailwind CSS (via NativeWind). Features Google Authentication, dynamic search, cart functionality, smooth navigation, and a modern responsive UI. Powered by Appwrite for backend, database, auth, and file storage. Follows scalable architecture with excellent developer experience.",
-    tags: [
-      "React Native",
-      "Expo",
-      "Appwrite",
-      "NativeWind",
-      "Tailwind CSS",
-      "TypeScript",
-      "Zustand",
-      "Sentry",
-    ],
-    imageUrl: foodDeliveryImage, // replace with the actual image import
-    projectLink:
-      "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
-    githubLink:
-      "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
-  },
+  // {
+  //   title: "Food Delivery App",
+  //   description:
+  //     "A full-stack mobile food delivery app built with React Native, TypeScript, and Tailwind CSS (via NativeWind). Features Google Authentication, dynamic search, cart functionality, smooth navigation, and a modern responsive UI. Powered by Appwrite for backend, database, auth, and file storage. Follows scalable architecture with excellent developer experience.",
+  //   tags: [
+  //     "React Native",
+  //     "Expo",
+  //     "Appwrite",
+  //     "NativeWind",
+  //     "Tailwind CSS",
+  //     "TypeScript",
+  //     "Zustand",
+  //     "Sentry",
+  //   ],
+  //   imageUrl: foodDeliveryImage, // replace with the actual image import
+  //   projectLink:
+  //     "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
+  //   githubLink:
+  //     "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
+  // },
+
   {
     title: "Hinglish Programming Language",
     description:
