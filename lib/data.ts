@@ -6,7 +6,8 @@ import hinglish from "@/public/hinglish.png";
 import store from "@/public/store.png";
 import mess from "@/public/mess.png";
 import gta from "@/public/gta.png";
-import foodDeliveryImage from "@/public/foodDeliveryImage.png";
+// import foodDeliveryImage from "@/public/foodDeliveryImage.png";
+import awwwards from "@/public/awwwards.png"
 
 export const links = [
   {
@@ -88,26 +89,26 @@ export const projectsData = [
     projectLink: "https://gta-vi-landing-page-zeta.vercel.app/",
     githubLink: "https://github.com/rupesh-dev30/GTA-VI-Landing-Page",
   },
-  {
-    title: "Food Delivery App",
-    description:
-      "A full-stack mobile food delivery app built with React Native, TypeScript, and Tailwind CSS (via NativeWind). Features Google Authentication, dynamic search, cart functionality, smooth navigation, and a modern responsive UI. Powered by Appwrite for backend, database, auth, and file storage. Follows scalable architecture with excellent developer experience.",
-    tags: [
-      "React Native",
-      "Expo",
-      "Appwrite",
-      "NativeWind",
-      "Tailwind CSS",
-      "TypeScript",
-      "Zustand",
-      "Sentry",
-    ],
-    imageUrl: foodDeliveryImage, // replace with the actual image import
-    projectLink:
-      "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
-    githubLink:
-      "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
-  },
+  // {
+  //   title: "Food Delivery App",
+  //   description:
+  //     "A full-stack mobile food delivery app built with React Native, TypeScript, and Tailwind CSS (via NativeWind). Features Google Authentication, dynamic search, cart functionality, smooth navigation, and a modern responsive UI. Powered by Appwrite for backend, database, auth, and file storage. Follows scalable architecture with excellent developer experience.",
+  //   tags: [
+  //     "React Native",
+  //     "Expo",
+  //     "Appwrite",
+  //     "NativeWind",
+  //     "Tailwind CSS",
+  //     "TypeScript",
+  //     "Zustand",
+  //     "Sentry",
+  //   ],
+  //   imageUrl: foodDeliveryImage, // replace with the actual image import
+  //   projectLink:
+  //     "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
+  //   githubLink:
+  //     "https://github.com/rupesh-dev30/Food-Delivery-React-Native-App",
+  // },
   {
     title: "Hinglish Programming Language",
     description:
@@ -115,7 +116,7 @@ export const projectsData = [
     tags: ["React.js", "Tailwind CSS", "TypeScript", "ShadCN"],
     imageUrl: hinglish,
     projectLink: "https://hinglish-language.vercel.app/",
-    githubLink: "https://github.com/rupesh-dev30/Hinglish-Language",
+    githubLink: "https://github.com/rīupesh-dev30/Hinglish-Language",
   },
   {
     title: "DevForum",
