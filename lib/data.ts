@@ -7,7 +7,8 @@ import store from "@/public/store.png";
 import mess from "@/public/mess.png";
 import gta from "@/public/gta.png";
 // import foodDeliveryImage from "@/public/foodDeliveryImage.png";
-import awwwards from "@/public/awwwards.png"
+import awwwards from "@/public/awwwards.png";
+import craftedge from "@/public/craftedge.png";
 
 export const links = [
   {
@@ -78,7 +79,7 @@ export const projectsData = [
     ],
     imageUrl: awwwards, // Replace this with your actual image import/URL
     projectLink: "https://spylt-milk-lac.vercel.app/",
-    githubLink: "https://github.com/FullStackEmpire/gsap-awwwards-website",
+    githubLink: "https://github.com/rupesh-dev30/Awwward-Website",
   },
   {
     title: "GTA VI GSAP Website Clone",
@@ -89,6 +90,16 @@ export const projectsData = [
     projectLink: "https://gta-vi-landing-page-zeta.vercel.app/",
     githubLink: "https://github.com/rupesh-dev30/GTA-VI-Landing-Page",
   },
+  {
+    title: "CraftEdge | GSAP Vintage Brewery Website",
+    description:
+      "A vintage-themed animated scroll website built with HTML, CSS, and GSAP. Features a floating bottle animation, timeline section, ingredient log, and responsive navigation. ScrollTrigger powers smooth transitions and engaging visual storytelling throughout the experience.",
+    tags: ["GSAP", "ScrollTrigger", "HTML", "CSS"],
+    imageUrl: craftedge,
+    projectLink: "https://rupesh-dev30.github.io/Crimson-Fermentation-GSAP-Animated-Scroll/", // Replace with actual deployment URL
+    githubLink: "https://github.com/rupesh-dev30/Crimson-Fermentation-GSAP-Animated-Scroll",
+  },
+
   // {
   //   title: "Food Delivery App",
   //   description:
@@ -116,7 +127,7 @@ export const projectsData = [
     tags: ["React.js", "Tailwind CSS", "TypeScript", "ShadCN"],
     imageUrl: hinglish,
     projectLink: "https://hinglish-language.vercel.app/",
-    githubLink: "https://github.com/rīupesh-dev30/Hinglish-Language",
+    githubLink: "https://github.com/rupesh-dev30/Hinglish-Language",
   },
   {
     title: "DevForum",

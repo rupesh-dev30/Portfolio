@@ -15,6 +15,7 @@ export default function Project({
   imageUrl,
   projectLink,
   index,
+  githubLink
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -80,6 +81,13 @@ export default function Project({
           >
             View Project ↗
           </Link>
+
+          <Link
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 text-black hover:underline text-sm font-medium dark:text-white"
+          >Github Repository ↗</Link>
         </div>
       </section>
     </motion.div>
